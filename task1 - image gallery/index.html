@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LUMINA — Image Gallery</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Geist+Mono:wght@300;400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="logo">Lumina</div>
+      <nav class="filter-nav">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="nature">Nature</button>
+        <button class="filter-btn" data-filter="city">City</button>
+        <button class="filter-btn" data-filter="abstract">Abstract</button>
+        <button class="filter-btn" data-filter="portrait">Portrait</button>
+      </nav>
+      <div class="header-count"><span id="count">12</span> works</div>
+    </div>
+  </header>
+
+  <!-- HERO STRIP -->
+  <section class="hero-strip">
+    <div class="hero-text">
+      <span class="hero-label">Visual Collection — 2025</span>
+      <h1 class="hero-title">Moments<br/><em>Captured</em></h1>
+    </div>
+    <div class="marquee-wrap">
+      <div class="marquee">
+        <span>Nature &nbsp;·&nbsp; City &nbsp;·&nbsp; Abstract &nbsp;·&nbsp; Portrait &nbsp;·&nbsp; Nature &nbsp;·&nbsp; City &nbsp;·&nbsp; Abstract &nbsp;·&nbsp; Portrait &nbsp;·&nbsp;</span>
+        <span>Nature &nbsp;·&nbsp; City &nbsp;·&nbsp; Abstract &nbsp;·&nbsp; Portrait &nbsp;·&nbsp; Nature &nbsp;·&nbsp; City &nbsp;·&nbsp; Abstract &nbsp;·&nbsp; Portrait &nbsp;·&nbsp;</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- IMAGE FILTER BAR (mobile) -->
+  <div class="filter-mobile">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="nature">Nature</button>
+    <button class="filter-btn" data-filter="city">City</button>
+    <button class="filter-btn" data-filter="abstract">Abstract</button>
+    <button class="filter-btn" data-filter="portrait">Portrait</button>
+  </div>
+
+  <!-- GALLERY (Masonry) -->
+  <main class="gallery" id="gallery">
+
+    <div class="gallery-item" data-category="nature" data-index="0">
+      <div class="img-wrap">
+        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80" alt="Mountain Peaks" loading="lazy" />
+        <div class="img-overlay">
+          <span class="img-title">Mountain Peaks</span>
+          <span class="img-cat">Nature</span>
+          <button class="expand-btn" aria-label="View fullscreen">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="gallery-item" data-category="city" data-index="1">
+      <div class="img-wrap">
+        <img src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=800&q=80" alt="City Skyline" loading="lazy" />
+        <div class="img-overlay">
+          <span class="img-title">City Skyline</span>
+          <span class="img-cat">City</span>
+          <button class="expand-btn" aria-label="View fullscreen">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="gallery-item" data-category="abstract" data-index="2">
+      <div class="img-wrap">
+        <img src="https://images.unsplash.com/photo-1534796636912-3b95b3ab5986?w=800&q=80" alt="Abstract Waves" loading="lazy" />
+        <div class="img-overlay">
+          <span class="img-title">Abstract Waves</span>
+          <span class="img-cat">Abstract</span>
+          <button class="expand-btn" aria-label="View fullscreen">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="gallery-item" data-category="portrait" data-index="3">
+      <div class="img-wrap">
+        <img src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=800&q=80" alt="Golden Hour Portrait" loading="lazy" />
+        <div class="img-overlay">
+          <span class="img-title">Golden Hour</span>
+          <span class="img-cat">Portrait</span>
+          <button class="expand-btn" aria-label="View fullscreen">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="gallery-item" data-category="nature" data-index="4">
+      <div class="img-wrap">
+        <img src="https://images.unsplash.com/photo-1501854140801-50d01698950b?w=800&q=80" alt="Green Valley" loading="lazy" />
+        <div class="img-overlay">
+          <span class="img-title">Green Valley</span>
+          <span class="img-cat">Nature</span>
+          <button class="expand-btn" aria-label="View fullscreen">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="gallery-item" data-category="city" data-index="5">
+      <div class="img-wrap">
+        <img src="https://images.unsplash.com/photo-1444723121867-7a241cacace9?w=800&q=80" alt="Night Lights" loading="lazy" />
+        <div class="img-overlay">
+          <span class="img-title">Night Lights</span>
+          <span class="img-cat">City</span>
+          <button class="expand-btn" aria-label="View fullscreen">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="gallery-item" data-category="portrait" data-index="6">
+      <div class="img-wrap">
+        <img src="https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?w=800&q=80" alt="Soft Portrait" loading="lazy" />
+        <div class="img-overlay">
+          <span class="img-title">Soft Portrait</span>
+          <span class="img-cat">Portrait</span>
+          <button class="expand-btn" aria-label="View fullscreen">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="gallery-item" data-category="abstract" data-index="7">
+      <div class="img-wrap">
+        <img src="https://images.unsplash.com/photo-1550859492-d5da9d8e45f3?w=800&q=80" alt="Color Burst" loading="lazy" />
+        <div class="img-overlay">
+          <span class="img-title">Color Burst</span>
+          <span class="img-cat">Abstract</span>
+          <button class="expand-btn" aria-label="View fullscreen">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="gallery-item" data-category="city" data-index="8">
+      <div class="img-wrap">
+        <img src="https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?w=800&q=80" alt="Urban Jungle" loading="lazy" />
+        <div class="img-overlay">
+          <span class="img-title">Urban Jungle</span>
+          <span class="img-cat">City</span>
+          <button class="expand-btn" aria-label="View fullscreen">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="gallery-item" data-category="nature" data-index="9">
+      <div class="img-wrap">
+        <img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=800&q=80" alt="Foggy Forest" loading="lazy" />
+        <div class="img-overlay">
+          <span class="img-title">Foggy Forest</span>
+          <span class="img-cat">Nature</span>
+          <button class="expand-btn" aria-label="View fullscreen">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="gallery-item" data-category="abstract" data-index="10">
+      <div class="img-wrap">
+        <img src="https://images.unsplash.com/photo-1483568100814-1c2f5c1e4256?w=800&q=80" alt="Neon Flow" loading="lazy" />
+        <div class="img-overlay">
+          <span class="img-title">Neon Flow</span>
+          <span class="img-cat">Abstract</span>
+          <button class="expand-btn" aria-label="View fullscreen">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="gallery-item" data-category="portrait" data-index="11">
+      <div class="img-wrap">
+        <img src="https://images.unsplash.com/photo-1554151228-14d9def656e4?w=800&q=80" alt="Blue Eyes" loading="lazy" />
+        <div class="img-overlay">
+          <span class="img-title">Blue Eyes</span>
+          <span class="img-cat">Portrait</span>
+          <button class="expand-btn" aria-label="View fullscreen">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+    <div class="lightbox-backdrop"></div>
+    <div class="lightbox-container">
+      <button class="lb-close" id="lb-close" aria-label="Close">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+      <button class="lb-nav lb-prev" id="lb-prev" aria-label="Previous image">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="15 18 9 12 15 6"/></svg>
+      </button>
+      <div class="lb-img-wrap">
+        <img id="lb-img" src="" alt="" />
+        <div class="lb-loader"></div>
+      </div>
+      <button class="lb-nav lb-next" id="lb-next" aria-label="Next image">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="9 18 15 12 9 6"/></svg>
+      </button>
+      <div class="lb-info">
+        <div class="lb-meta">
+          <span id="lb-title" class="lb-title-text"></span>
+          <span id="lb-cat" class="lb-cat-text"></span>
+        </div>
+        <div class="lb-filter-controls">
+          <label>Filter</label>
+          <select id="lb-filter-select">
+            <option value="none">None</option>
+            <option value="grayscale">Grayscale</option>
+            <option value="sepia">Sepia</option>
+            <option value="saturate">Vivid</option>
+            <option value="invert">Invert</option>
+            <option value="blur">Dreamy</option>
+          </select>
+        </div>
+        <span class="lb-counter"><span id="lb-current">1</span> / <span id="lb-total">12</span></span>
+      </div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <p>Lumina Gallery &copy; 2025 &nbsp;·&nbsp; HTML · CSS · JavaScript</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
