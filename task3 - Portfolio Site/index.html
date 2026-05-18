@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alex Mercer — Frontend Developer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,600&family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- CURSOR -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursor-follower"></div>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#home" class="nav-logo">AM<span>.</span></a>
+      <div class="nav-links" id="nav-links">
+        <a href="#about"    class="nav-link">About</a>
+        <a href="#skills"   class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#resume"   class="nav-link">Resume</a>
+        <a href="#contact"  class="nav-link">Contact</a>
+      </div>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO ── SECTION 1 -->
+  <section id="home" class="hero">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-content">
+      <div class="hero-label reveal">Available for Work · Cairo, Egypt</div>
+      <h1 class="hero-heading reveal">
+        <span class="line">Alex</span>
+        <span class="line italic">Mercer</span>
+      </h1>
+      <p class="hero-role reveal">Frontend Developer &amp; UI Designer</p>
+      <p class="hero-bio reveal">
+        Crafting digital experiences that are beautiful,<br class="hide-mobile"/>
+        accessible, and delightfully functional.
+      </p>
+      <div class="hero-actions reveal">
+        <a href="#projects" class="btn btn-primary">View My Work</a>
+        <a href="#contact"  class="btn btn-ghost">Let's Talk</a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+    <div class="hero-decoration">
+      <div class="deco-circle c1"></div>
+      <div class="deco-circle c2"></div>
+      <div class="deco-circle c3"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT ── SECTION 2 -->
+  <section id="about" class="about section">
+    <div class="container">
+      <div class="section-label reveal">01 — About Me</div>
+      <div class="about-grid">
+        <div class="about-photo reveal">
+          <div class="photo-frame">
+            <img src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?w=600&q=80" alt="Alex Mercer" />
+            <div class="photo-tag">5+ yrs exp.</div>
+          </div>
+        </div>
+        <div class="about-text">
+          <h2 class="section-title reveal">Turning Ideas<br/><em>Into Interfaces</em></h2>
+          <p class="reveal">
+            I'm a frontend developer with a passion for building pixel-perfect, performant web applications.
+            I specialize in HTML, CSS, and JavaScript with a keen eye for design systems and user experience.
+          </p>
+          <p class="reveal">
+            When I'm not coding, I explore generative art, read about typography, and contribute to open-source projects.
+            I believe great software is invisible — it just works, beautifully.
+          </p>
+          <div class="about-stats reveal">
+            <div class="stat">
+              <span class="stat-num">30+</span>
+              <span class="stat-label">Projects Shipped</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">12</span>
+              <span class="stat-label">Happy Clients</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">5+</span>
+              <span class="stat-label">Years Experience</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS ── SECTION 3 -->
+  <section id="skills" class="skills section">
+    <div class="container">
+      <div class="section-label reveal">02 — Skills</div>
+      <h2 class="section-title reveal">What I <em>Work With</em></h2>
+      <div class="skills-grid">
+
+        <div class="skill-card reveal">
+          <div class="skill-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+          </div>
+          <h3>HTML &amp; CSS</h3>
+          <p>Semantic markup, modern layouts with Grid &amp; Flexbox, CSS animations, and responsive design.</p>
+          <div class="skill-bar"><div class="skill-fill" style="--fill: 96%"></div></div>
+          <span class="skill-pct">96%</span>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+          </div>
+          <h3>JavaScript</h3>
+          <p>ES6+, DOM manipulation, async/await, API integration, and interactive UI development.</p>
+          <div class="skill-bar"><div class="skill-fill" style="--fill: 90%"></div></div>
+          <span class="skill-pct">90%</span>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+          </div>
+          <h3>React</h3>
+          <p>Component architecture, hooks, state management, and building scalable frontend apps.</p>
+          <div class="skill-bar"><div class="skill-fill" style="--fill: 82%"></div></div>
+          <span class="skill-pct">82%</span>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+          </div>
+          <h3>UI/UX Design</h3>
+          <p>Figma, design systems, user research, wireframing, and prototyping beautiful interfaces.</p>
+          <div class="skill-bar"><div class="skill-fill" style="--fill: 78%"></div></div>
+          <span class="skill-pct">78%</span>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+          </div>
+          <h3>Git &amp; DevOps</h3>
+          <p>Version control, CI/CD pipelines, GitHub Actions, and deployment on Netlify / Vercel.</p>
+          <div class="skill-bar"><div class="skill-fill" style="--fill: 74%"></div></div>
+          <span class="skill-pct">74%</span>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 20h9M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+          </div>
+          <h3>Accessibility</h3>
+          <p>WCAG 2.1 guidelines, ARIA patterns, keyboard navigation, and inclusive design practices.</p>
+          <div class="skill-bar"><div class="skill-fill" style="--fill: 85%"></div></div>
+          <span class="skill-pct">85%</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS ── SECTION 4 -->
+  <section id="projects" class="projects section">
+    <div class="container">
+      <div class="section-label reveal">03 — Projects</div>
+      <h2 class="section-title reveal">Selected <em>Works</em></h2>
+      <div class="projects-grid">
+
+        <article class="project-card reveal featured">
+          <div class="project-img">
+            <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=900&q=80" alt="Code Editor App" loading="lazy" />
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="#" class="proj-link" aria-label="View live">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                </a>
+                <a href="#" class="proj-link" aria-label="View code">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span>React</span><span>TypeScript</span><span>Node.js</span>
+            </div>
+            <h3>DevCanvas — Code Editor</h3>
+            <p>A browser-based code editor with live preview, syntax highlighting, and collaborative editing. Supports HTML, CSS, and JavaScript in real-time.</p>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-img">
+            <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?w=700&q=80" alt="Finance App" loading="lazy" />
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="#" class="proj-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+                <a href="#" class="proj-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg></a>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags"><span>JavaScript</span><span>Chart.js</span></div>
+            <h3>Fintrack — Budget Dashboard</h3>
+            <p>Personal finance tracker with visual charts, expense categories, and monthly reports.</p>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-img">
+            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=700&q=80" alt="Analytics Dashboard" loading="lazy" />
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="#" class="proj-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+                <a href="#" class="proj-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg></a>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags"><span>Vue.js</span><span>Tailwind</span></div>
+            <h3>Pulse — Analytics Dashboard</h3>
+            <p>Real-time analytics dashboard with live data visualization and customizable widgets.</p>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-img">
+            <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?w=700&q=80" alt="Portfolio" loading="lazy" />
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="#" class="proj-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+                <a href="#" class="proj-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg></a>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
+            <h3>This Portfolio Site</h3>
+            <p>A hand-crafted portfolio with smooth scroll, animations, and custom cursor interactions.</p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- RESUME ── SECTION 5 -->
+  <section id="resume" class="resume section">
+    <div class="container">
+      <div class="section-label reveal">04 — Resume</div>
+      <div class="resume-grid">
+        <div class="resume-col">
+          <h2 class="section-title reveal">Experience</h2>
+          <div class="timeline">
+            <div class="timeline-item reveal">
+              <div class="tl-dot"></div>
+              <div class="tl-content">
+                <span class="tl-date">2022 — Present</span>
+                <h4>Senior Frontend Developer</h4>
+                <span class="tl-company">TechNova Studio</span>
+                <p>Leading frontend architecture and design systems for SaaS platforms serving 50k+ users.</p>
+              </div>
+            </div>
+            <div class="timeline-item reveal">
+              <div class="tl-dot"></div>
+              <div class="tl-content">
+                <span class="tl-date">2020 — 2022</span>
+                <h4>UI Developer</h4>
+                <span class="tl-company">Pixel Republic Agency</span>
+                <p>Built interactive marketing sites and dashboards for 20+ enterprise clients.</p>
+              </div>
+            </div>
+            <div class="timeline-item reveal">
+              <div class="tl-dot"></div>
+              <div class="tl-content">
+                <span class="tl-date">2019 — 2020</span>
+                <h4>Frontend Intern</h4>
+                <span class="tl-company">Bright Code Labs</span>
+                <p>Contributed to open-source component library and internal tooling projects.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="resume-col">
+          <h2 class="section-title reveal">Education</h2>
+          <div class="timeline">
+            <div class="timeline-item reveal">
+              <div class="tl-dot"></div>
+              <div class="tl-content">
+                <span class="tl-date">2015 — 2019</span>
+                <h4>B.Sc. Computer Science</h4>
+                <span class="tl-company">Cairo University</span>
+                <p>Focus on Human-Computer Interaction and Software Engineering. GPA: 3.8/4.0</p>
+              </div>
+            </div>
+            <div class="timeline-item reveal">
+              <div class="tl-dot"></div>
+              <div class="tl-content">
+                <span class="tl-date">2023</span>
+                <h4>AWS Certified Developer</h4>
+                <span class="tl-company">Amazon Web Services</span>
+                <p>Associate level certification in cloud architecture and deployment.</p>
+              </div>
+            </div>
+          </div>
+          <div class="resume-download reveal">
+            <a href="#" class="btn btn-primary" download>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+              Download Full CV
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT ── SECTION 6 -->
+  <section id="contact" class="contact section">
+    <div class="container">
+      <div class="section-label reveal">05 — Contact</div>
+      <h2 class="section-title reveal">Let's <em>Connect</em></h2>
+      <p class="contact-intro reveal">Have a project in mind or want to chat? My inbox is always open.</p>
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <div class="contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <span>alex@mercer.dev</span>
+          </div>
+          <div class="contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>Cairo, Egypt</span>
+          </div>
+          <div class="contact-socials">
+            <a href="#" aria-label="GitHub" class="social-link">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            </a>
+            <a href="#" aria-label="LinkedIn" class="social-link">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+            <a href="#" aria-label="Twitter" class="social-link">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="contact-form reveal">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Your name" autocomplete="name" />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="your@email.com" autocomplete="email" />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" rows="5" placeholder="Tell me about your project..."></textarea>
+          </div>
+          <button class="btn btn-primary" id="send-btn" type="button">
+            <span>Send Message</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+          </button>
+          <div class="form-success" id="form-success">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+            Message sent! I'll get back to you soon.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <span class="footer-logo">AM<span>.</span></span>
+        <p>Designed &amp; Built by Alex Mercer</p>
+        <p class="footer-copy">&copy; 2025 All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
